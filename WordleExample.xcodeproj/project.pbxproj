@@ -14,6 +14,10 @@
 		81D93B712FBCE25D00725CCE /* HousesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B702FBCE25D00725CCE /* HousesListView.swift */; };
 		81D93B732FBCE25D00725CCE /* HouseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B722FBCE25D00725CCE /* HouseItemView.swift */; };
 		81D93B752FBCE25D00725CCE /* RELEASE.md in Resources */ = {isa = PBXBuildFile; fileRef = 81D93B742FBCE25D00725CCE /* RELEASE.md */; };
+		81D93B7A2FBCE43F00725CCE /* LetterEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B792FBCE43F00725CCE /* LetterEvaluation.swift */; };
+		81D93B7C2FBCE44200725CCE /* GuessLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B7B2FBCE44200725CCE /* GuessLetter.swift */; };
+		81D93B7E2FBCE44A00725CCE /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B7D2FBCE44A00725CCE /* Guess.swift */; };
+		81D93B822FBCE61000725CCE /* WordleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B812FBCE61000725CCE /* WordleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		81D93B702FBCE25D00725CCE /* HousesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListView.swift; sourceTree = "<group>"; };
 		81D93B722FBCE25D00725CCE /* HouseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemView.swift; sourceTree = "<group>"; };
 		81D93B742FBCE25D00725CCE /* RELEASE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RELEASE.md; sourceTree = "<group>"; };
+		81D93B792FBCE43F00725CCE /* LetterEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterEvaluation.swift; sourceTree = "<group>"; };
+		81D93B7B2FBCE44200725CCE /* GuessLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessLetter.swift; sourceTree = "<group>"; };
+		81D93B7D2FBCE44A00725CCE /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
+		81D93B812FBCE61000725CCE /* WordleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				81D93B6A2FBCE25D00725CCE /* House.swift */,
+				81D93B792FBCE43F00725CCE /* LetterEvaluation.swift */,
+				81D93B7B2FBCE44200725CCE /* GuessLetter.swift */,
+				81D93B7D2FBCE44A00725CCE /* Guess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				81D93B6D2FBCE25D00725CCE /* HouseListViewModel.swift */,
+				81D93B812FBCE61000725CCE /* WordleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D93B732FBCE25D00725CCE /* HouseItemView.swift in Sources */,
+				81D93B7C2FBCE44200725CCE /* GuessLetter.swift in Sources */,
+				81D93B7A2FBCE43F00725CCE /* LetterEvaluation.swift in Sources */,
 				81D93B6B2FBCE25D00725CCE /* House.swift in Sources */,
 				81D93B712FBCE25D00725CCE /* HousesListView.swift in Sources */,
+				81D93B822FBCE61000725CCE /* WordleViewModel.swift in Sources */,
+				81D93B7E2FBCE44A00725CCE /* Guess.swift in Sources */,
 				81D93B6E2FBCE25D00725CCE /* HouseListViewModel.swift in Sources */,
 				81D93B662FBCE25D00725CCE /* WordleExampleApp.swift in Sources */,
 			);
