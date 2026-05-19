@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81D93B662FBCE25D00725CCE /* WordleExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B652FBCE25D00725CCE /* WordleExampleApp.swift */; };
+		81D93B682FBCE25D00725CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D93B672FBCE25D00725CCE /* Assets.xcassets */; };
+		81D93B6B2FBCE25D00725CCE /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B6A2FBCE25D00725CCE /* House.swift */; };
+		81D93B6E2FBCE25D00725CCE /* HouseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B6D2FBCE25D00725CCE /* HouseListViewModel.swift */; };
+		81D93B712FBCE25D00725CCE /* HousesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B702FBCE25D00725CCE /* HousesListView.swift */; };
+		81D93B732FBCE25D00725CCE /* HouseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B722FBCE25D00725CCE /* HouseItemView.swift */; };
+		81D93B752FBCE25D00725CCE /* RELEASE.md in Resources */ = {isa = PBXBuildFile; fileRef = 81D93B742FBCE25D00725CCE /* RELEASE.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81D93B622FBCE25D00725CCE /* WordleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D93B652FBCE25D00725CCE /* WordleExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleExampleApp.swift; sourceTree = "<group>"; };
+		81D93B672FBCE25D00725CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D93B6A2FBCE25D00725CCE /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		81D93B6D2FBCE25D00725CCE /* HouseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewModel.swift; sourceTree = "<group>"; };
+		81D93B702FBCE25D00725CCE /* HousesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListView.swift; sourceTree = "<group>"; };
+		81D93B722FBCE25D00725CCE /* HouseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemView.swift; sourceTree = "<group>"; };
+		81D93B742FBCE25D00725CCE /* RELEASE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RELEASE.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81D93B5F2FBCE25D00725CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81D93B592FBCE25D00725CCE = {
+			isa = PBXGroup;
+			children = (
+				81D93B642FBCE25D00725CCE /* WordleExample */,
+				81D93B632FBCE25D00725CCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81D93B632FBCE25D00725CCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81D93B622FBCE25D00725CCE /* WordleExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81D93B642FBCE25D00725CCE /* WordleExample */ = {
+			isa = PBXGroup;
+			children = (
+				81D93B652FBCE25D00725CCE /* WordleExampleApp.swift */,
+				81D93B672FBCE25D00725CCE /* Assets.xcassets */,
+				81D93B742FBCE25D00725CCE /* RELEASE.md */,
+				81D93B692FBCE25D00725CCE /* Model */,
+				81D93B6C2FBCE25D00725CCE /* ViewModels */,
+				81D93B6F2FBCE25D00725CCE /* Views */,
+			);
+			path = WordleExample;
+			sourceTree = "<group>";
+		};
+		81D93B692FBCE25D00725CCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81D93B6A2FBCE25D00725CCE /* House.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81D93B6C2FBCE25D00725CCE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81D93B6D2FBCE25D00725CCE /* HouseListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81D93B6F2FBCE25D00725CCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81D93B702FBCE25D00725CCE /* HousesListView.swift */,
+				81D93B722FBCE25D00725CCE /* HouseItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81D93B612FBCE25D00725CCE /* WordleExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D93B762FBCE25D00725CCE /* Build configuration list for PBXNativeTarget "WordleExample" */;
+			buildPhases = (
+				81D93B5E2FBCE25D00725CCE /* Sources */,
+				81D93B5F2FBCE25D00725CCE /* Frameworks */,
+				81D93B602FBCE25D00725CCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordleExample;
+			packageProductDependencies = (
+			);
+			productName = WordleExample;
+			productReference = 81D93B622FBCE25D00725CCE /* WordleExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81D93B5A2FBCE25D00725CCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					81D93B612FBCE25D00725CCE = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 81D93B5D2FBCE25D00725CCE /* Build configuration list for PBXProject "WordleExample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81D93B592FBCE25D00725CCE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 81D93B632FBCE25D00725CCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81D93B612FBCE25D00725CCE /* WordleExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81D93B602FBCE25D00725CCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D93B752FBCE25D00725CCE /* RELEASE.md in Resources */,
+				81D93B682FBCE25D00725CCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D93B5E2FBCE25D00725CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D93B732FBCE25D00725CCE /* HouseItemView.swift in Sources */,
+				81D93B6B2FBCE25D00725CCE /* House.swift in Sources */,
+				81D93B712FBCE25D00725CCE /* HousesListView.swift in Sources */,
+				81D93B6E2FBCE25D00725CCE /* HouseListViewModel.swift in Sources */,
+				81D93B662FBCE25D00725CCE /* WordleExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		81D93B5B2FBCE25D00725CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		81D93B5C2FBCE25D00725CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		81D93B772FBCE25D00725CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.on.lcs.WordleExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D93B782FBCE25D00725CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.on.lcs.WordleExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81D93B5D2FBCE25D00725CCE /* Build configuration list for PBXProject "WordleExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D93B5B2FBCE25D00725CCE /* Debug */,
+				81D93B5C2FBCE25D00725CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D93B762FBCE25D00725CCE /* Build configuration list for PBXNativeTarget "WordleExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D93B772FBCE25D00725CCE /* Debug */,
+				81D93B782FBCE25D00725CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81D93B5A2FBCE25D00725CCE /* Project object */;
+}
