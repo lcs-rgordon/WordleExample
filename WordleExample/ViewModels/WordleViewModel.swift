@@ -26,6 +26,9 @@ class WordleViewModel {
     // Which letter box within the current row the user is typing in (0 to 4)
     var currentLetterIndex: Int
     
+    // The evaluation status of each letter in the alphabet (for the visual keyboard)
+    var alphabetStatus: [String: LetterEvaluation] = [:]
+    
     // Constants for game configuration
     let maxGuesses: Int = 6
     let wordLength: Int = 5
@@ -144,5 +147,22 @@ class WordleViewModel {
         
         // Update the board with the evaluated letters
         guesses[currentGuessIndex].letters = currentGuessLetters
+        
+        // Update the alphabet status for the visual keyboard
+        for letter in currentGuessLetters {
+            let char = letter.character
+            let status = letter.status
+            
+            // Only upgrade the status (correct > misplaced > notInWord)
+            if let currentStatus = alphabetStatus[char] {
+                if status == .correct {
+                    alphabetStatus[char] = .correct
+                } else if status == .misplaced && currentStatus != .correct {
+                    alphabetStatus[char] = .misplaced
+                }
+            } else {
+                alphabetStatus[char] = status
+            }
+        }
     }
 }
