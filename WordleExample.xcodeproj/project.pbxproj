@@ -18,6 +18,7 @@
 		81D93B7C2FBCE44200725CCE /* GuessLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B7B2FBCE44200725CCE /* GuessLetter.swift */; };
 		81D93B7E2FBCE44A00725CCE /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B7D2FBCE44A00725CCE /* Guess.swift */; };
 		81D93B822FBCE61000725CCE /* WordleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93B812FBCE61000725CCE /* WordleViewModel.swift */; };
+		81DF9A9E2FBDDA6800FD1EC0 /* GAME_LOGIC.md in Resources */ = {isa = PBXBuildFile; fileRef = 81DF9A9D2FBDDA6800FD1EC0 /* GAME_LOGIC.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		81D93B7B2FBCE44200725CCE /* GuessLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessLetter.swift; sourceTree = "<group>"; };
 		81D93B7D2FBCE44A00725CCE /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
 		81D93B812FBCE61000725CCE /* WordleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleViewModel.swift; sourceTree = "<group>"; };
+		81DF9A9D2FBDDA6800FD1EC0 /* GAME_LOGIC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GAME_LOGIC.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				81D93B652FBCE25D00725CCE /* WordleExampleApp.swift */,
 				81D93B672FBCE25D00725CCE /* Assets.xcassets */,
 				81D93B742FBCE25D00725CCE /* RELEASE.md */,
+				81DF9A9D2FBDDA6800FD1EC0 /* GAME_LOGIC.md */,
 				81D93B692FBCE25D00725CCE /* Model */,
 				81D93B6C2FBCE25D00725CCE /* ViewModels */,
 				81D93B6F2FBCE25D00725CCE /* Views */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DF9A9E2FBDDA6800FD1EC0 /* GAME_LOGIC.md in Resources */,
 				81D93B752FBCE25D00725CCE /* RELEASE.md in Resources */,
 				81D93B682FBCE25D00725CCE /* Assets.xcassets in Resources */,
 			);
