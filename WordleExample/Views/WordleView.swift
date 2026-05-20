@@ -20,6 +20,18 @@ struct WordleView: View {
     
     // MARK: - Computed properties
     
+    /// Provides a descriptive message based on the current game state
+    private var statusMessage: String {
+        switch viewModel.gameState {
+        case .won:
+            return "Magnificent! You found the word."
+        case .lost:
+            return "Game Over. The word was \(viewModel.targetWord)."
+        case .playing:
+            return ""
+        }
+    }
+    
     var body: some View {
         VStack(spacing: 20) {
             // App Title
@@ -34,6 +46,15 @@ struct WordleView: View {
                 }
             }
             .padding()
+            
+            // Status Message for Win/Loss
+            if viewModel.gameState != .playing {
+                Text(statusMessage)
+                    .font(.headline)
+                    .padding()
+                    .background(viewModel.gameState == .won ? Color.green.opacity(0.2) : Color.red.opacity(0.2))
+                    .cornerRadius(8)
+            }
             
             Spacer()
             

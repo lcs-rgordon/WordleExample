@@ -49,6 +49,7 @@ struct KeyboardView: View {
                         .cornerRadius(4)
                 }
                 .buttonStyle(.plain)
+                .disabled(viewModel.gameState != .playing)
                 
                 // Backspace key for mouse users
                 Button(action: { viewModel.removeLastLetter() }) {
@@ -59,8 +60,10 @@ struct KeyboardView: View {
                         .cornerRadius(4)
                 }
                 .buttonStyle(.plain)
+                .disabled(viewModel.gameState != .playing)
             }
         }
+        .disabled(viewModel.gameState != .playing)
     }
 }
 

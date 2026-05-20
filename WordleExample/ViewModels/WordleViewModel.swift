@@ -26,6 +26,9 @@ class WordleViewModel {
     // Which letter box within the current row the user is typing in (0 to 4)
     var currentLetterIndex: Int
     
+    // The current state of the game (playing, won, or lost)
+    var gameState: GameState
+    
     // The evaluation status of each letter in the alphabet (for the visual keyboard)
     var alphabetStatus: [String: LetterEvaluation] = [:]
     
@@ -50,14 +53,17 @@ class WordleViewModel {
         // 3. Start at the first box of the first row
         self.currentGuessIndex = 0
         self.currentLetterIndex = 0
+        
+        // 4. Set initial game state
+        self.gameState = .playing
     }
     
     // MARK: - Functions
     
     // Adds a letter to the current guess if there is space
     func addLetter(_ character: String) {
-        // Ensure we haven't filled the current row
-        if currentLetterIndex < wordLength {
+        // Ensure the game is still in progress and we haven't filled the current row
+        if gameState == .playing && currentLetterIndex < wordLength {
             // Update the character at the current position
             guesses[currentGuessIndex].letters[currentLetterIndex].character = character.uppercased()
             
@@ -68,8 +74,8 @@ class WordleViewModel {
     
     // Removes the last typed letter from the current guess
     func removeLastLetter() {
-        // Ensure there is a letter to remove
-        if currentLetterIndex > 0 {
+        // Ensure the game is still in progress and there is a letter to remove
+        if gameState == .playing && currentLetterIndex > 0 {
             // Move back one box
             currentLetterIndex -= 1
             
@@ -80,19 +86,32 @@ class WordleViewModel {
     
     // Submits the current row for evaluation
     func submitGuess() {
-        // Ensure the row is completely filled
-        if currentLetterIndex == wordLength {
+        // Ensure the game is still in progress and the row is completely filled
+        if gameState == .playing && currentLetterIndex == wordLength {
             
             // 1. Evaluate each letter against the target word
             evaluateCurrentGuess()
             
-            // 2. Move to the next row
+            // 2. Check for win condition (all letters correct)
+            let currentGuess = guesses[currentGuessIndex]
+            var correctCount = 0
+            for letter in currentGuess.letters {
+                if letter.status == .correct {
+                    correctCount += 1
+                }
+            }
+            
+            if correctCount == wordLength {
+                gameState = .won
+                return
+            }
+            
+            // 3. Move to the next row or end game as lost
             if currentGuessIndex < maxGuesses - 1 {
                 currentGuessIndex += 1
                 currentLetterIndex = 0
             } else {
-                // TODO: Handle game over (win or loss)
-                print("Game Over")
+                gameState = .lost
             }
         }
     }
