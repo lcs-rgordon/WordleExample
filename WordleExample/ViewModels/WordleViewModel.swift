@@ -104,25 +104,30 @@ class WordleViewModel {
         
         // Keep track of which letters in the target word have already been "matched"
         // This prevents double-counting misplaced letters
-        var targetMatched = Array(repeating: false, count: wordLength)
+        var targetMatched = Array(repeating: false, count: targetChars.count)
         
         // FIRST PASS: Find all correct letters (green)
-        for i in 0..<wordLength {
-            if currentGuessLetters[i].character == String(targetChars[i]) {
-                currentGuessLetters[i].status = .correct
-                targetMatched[i] = true
+        // We iterate over the indices of the current guess letters array
+        for i in currentGuessLetters.indices {
+            // Check if indices are valid for both arrays before accessing
+            if i < targetChars.count {
+                if currentGuessLetters[i].character == String(targetChars[i]) {
+                    currentGuessLetters[i].status = .correct
+                    targetMatched[i] = true
+                }
             }
         }
         
         // SECOND PASS: Find misplaced (yellow) or incorrect (gray) letters
-        for i in 0..<wordLength {
+        for i in currentGuessLetters.indices {
             // Skip boxes already marked as correct
             if currentGuessLetters[i].status == .correct { continue }
             
             var foundMisplaced = false
             
             // Check if this letter exists elsewhere in the target word
-            for j in 0..<wordLength {
+            // We iterate over the indices of the target characters to find matches
+            for j in targetChars.indices {
                 if !targetMatched[j] && currentGuessLetters[i].character == String(targetChars[j]) {
                     currentGuessLetters[i].status = .misplaced
                     targetMatched[j] = true
